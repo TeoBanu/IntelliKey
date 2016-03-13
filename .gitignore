@@ -1,0 +1,101 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @TeoBanu
+
+1,493
+33,500
+
+    12,680
+
+github/gitignore
+Code
+Pull requests 98
+Pulse
+Graphs
+gitignore/Global/Eclipse.gitignore
+988fd7a 7 days ago
+@shiftkey shiftkey Merge pull request #1807 from rlee287/eclipse-recommender
+@aroben
+@shiftkey
+@tyutyutyu
+@drasolka
+@rlee287
+@mimibar
+@fhemberger
+@lfborjas
+@leandrodeleite
+@jcarsique
+@segfly
+@harshadsabne
+@gAmUssA
+@DenisGorbachev
+@pangratz
+@defunkt
+@sveyret
+@arinto
+@apetresc
+@Danimoth
+@Utumno
+52 lines (37 sloc) 665 Bytes
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+    Status API Training Shop Blog About Pricing 
+
+    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IntelliKeyController">
+   <left>
+      <HBox prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+		<children>
+			<VBox fx:id="keybox" prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+			<children>
+                  <Separator orientation="VERTICAL" prefHeight="20.0" />
+            <HBox prefHeight="25.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" text="1" />
+                  <Button mnemonicParsing="false" text="2" />
+                  <Button mnemonicParsing="false" text="3" />
+                  <Button mnemonicParsing="false" text="4" />
+                  <Button mnemonicParsing="false" text="5" />
+                  <Button mnemonicParsing="false" text="6" />
+                  <Button mnemonicParsing="false" text="7" />
+                  <Button mnemonicParsing="false" text="8" />
+                  <Button mnemonicParsing="false" text="9" />
+                  <Button mnemonicParsing="false" text="0" />
+                  <Button mnemonicParsing="false" text="-" />
+               </children>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" text="q">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin></Button>
+                  <Button mnemonicParsing="false" text="w" />
+                  <Button mnemonicParsing="false" text="e" />
+                  <Button mnemonicParsing="false" text="r" />
+                  <Button mnemonicParsing="false" text="t" />
+                  <Button mnemonicParsing="false" text="y" />
+                  <Button mnemonicParsing="false" text="u" />
+                  <Button mnemonicParsing="false" text="i" />
+                  <Button mnemonicParsing="false" text="o" />
+                  <Button mnemonicParsing="false" text="p" />
+                  <Button mnemonicParsing="false" text="'" />
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" text="a" />
+                  <Button mnemonicParsing="false" text="s" />
+                  <Button mnemonicParsing="false" text="d" />
+                  <Button mnemonicParsing="false" text="f" />
+                  <Button mnemonicParsing="false" text="g" />
+                  <Button mnemonicParsing="false" text="h" />
+                  <Button mnemonicParsing="false" text="i" />
+                  <Button mnemonicParsing="false" text="j" />
+                  <Button mnemonicParsing="false" text="k" />
+                  <Button mnemonicParsing="false" text="l" />
+                  <Button mnemonicParsing="false" text=":" />
+               </children>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="250.0">
+               <children>
+                  <Button mnemonicParsing="false" text="!" />
+                  <Button mnemonicParsing="false" text="z" />
+                  <Button mnemonicParsing="false" text="x" />
+                  <Button mnemonicParsing="false" text="c" />
+                  <Button mnemonicParsing="false" text="v" />
+                  <Button mnemonicParsing="false" text="b" />
+                  <Button mnemonicParsing="false" text="n" />
+                  <Button mnemonicParsing="false" text="m" />
+                  <Button mnemonicParsing="false" text="," />
+                  <Button mnemonicParsing="false" text="." />
+                  <Button mnemonicParsing="false" text="?" />
+               </children>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="257.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="259.0" text="Space">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin></HBox>
+         </children>
+			</VBox>
+			<VBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Backspace">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin></Button>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+               </children>
+               <HBox.margin>
+                  <Insets top="50.0" />
+               </HBox.margin></VBox>
+		</children>
+         
+      </HBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="186.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Suggestions:" />
+            <ListView fx:id="suggestionList" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onSettingsClick" text="Settings" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

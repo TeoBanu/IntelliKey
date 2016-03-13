@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="222.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SettingsController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Slide delay" />
+            <Separator prefHeight="8.0" prefWidth="82.0" />
+            <Slider fx:id="sliderDelay" blockIncrement="1.0" majorTickUnit="100.0" max="1000.0" min="300.0" minorTickCount="0" prefHeight="14.0" prefWidth="150.0" snapToTicks="true" value="300.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Max suggestions" />
+            <Separator prefHeight="0.0" prefWidth="53.0" />
+            <TextField fx:id="txtMaxSuggestions" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Suggestion accuracy" />
+            <Separator prefHeight="0.0" prefWidth="31.0" />
+            <Slider fx:id="sliderAccuracy" blockIncrement="0.01" majorTickUnit="0.01" max="1.0" min="0.1" minorTickCount="0" prefHeight="14.0" prefWidth="152.0" snapToTicks="true" />
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="saveBtn" cancelButton="true" mnemonicParsing="false" onAction="#onSaveClick" text="Save">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
